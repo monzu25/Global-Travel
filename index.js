@@ -167,6 +167,9 @@ run().catch(console.dir)
 // app.get('/', (req, res) => {
 //     res.send('This is my CRUD Server is runnig! Woow');
 // });
+app.get('/hello', (req, res) => {
+    res.send('I am Ready to use');
+});
 
 app.listen(port, () => {
     console.log('Running Server on port', port);
